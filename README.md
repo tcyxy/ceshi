@@ -5,327 +5,189 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港01, server: zf.i809.ml, port: 43443, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: zf.i809.ml, skip-cert-verify: true, udp: true}
-  - {name: 香港02, server: fk.i809.ml, port: 21314, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: fk.i809.ml, skip-cert-verify: true, udp: true}
-  - {name: 香港03, server: dk.i809.ml, port: 22022, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: dk.i809.ml, skip-cert-verify: true, udp: true}
-  - {name: 香港04, server: pf.i809.ml, port: 12053, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: pf.i809.ml, skip-cert-verify: true, udp: true}
-  - {name: 香港05, server: qt51.godseven.xyz, port: 2083, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: qt51.godseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港06, server: qt52.godseven.xyz, port: 2053, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: qt52.godseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港07, server: qt58.godseven.xyz, port: 2083, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: qt58.godseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港08, server: zf.i809.ml, port: 31314, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: zf.i809.ml, skip-cert-verify: true, udp: true}
-  - {name: 新加坡01, server: dk.i809.ml, port: 52022, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: dk.i809.ml, skip-cert-verify: true, udp: true}
-  - {name: 新加坡02, server: pf.i809.ml, port: 32096, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: pf.i809.ml, skip-cert-verify: true, udp: true}
-  - {name: 新加坡03, server: qt32.godseven.xyz, port: 2087, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: qt32.godseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡04, server: zf.i809.ml, port: 52053, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: zf.i809.ml, skip-cert-verify: true, udp: true}
-  - {name: 新加坡05, server: zf.i809.ml, port: 58443, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: zf.i809.ml, skip-cert-verify: true, udp: true}
-  - {name: 日本01, server: dk.i809.ml, port: 52096, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: dk.i809.ml, skip-cert-verify: true, udp: true}
-  - {name: 日本02, server: pf.i809.ml, port: 38443, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: pf.i809.ml, skip-cert-verify: true, udp: true}
-  - {name: 日本03, server: zf.i809.ml, port: 12096, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: zf.i809.ml, skip-cert-verify: true, udp: true}
-  - {name: 日本04, server: zf.i809.ml, port: 33443, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: zf.i809.ml, skip-cert-verify: true, udp: true}
-  - {name: 日本05, server: dk.i809.ml, port: 32096, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: dk.i809.ml, skip-cert-verify: true, udp: true}
-  - {name: 日本06, server: zf.i809.ml, port: 34443, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: zf.i809.ml, skip-cert-verify: true, udp: true}
-  - {name: 日本07, server: pf.i809.ml, port: 52096, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: pf.i809.ml, skip-cert-verify: true, udp: true}
-  - {name: 日本08, server: zf.i809.ml, port: 32053, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: zf.i809.ml, skip-cert-verify: true, udp: true}
-  - {name: 日本09, server: qt48.godseven.xyz, port: 2087, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: qt48.godseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本10, server: pf.i809.ml, port: 52196, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: pf.i809.ml, skip-cert-verify: true, udp: true}
-  - {name: 美国01, server: zf.i809.ml, port: 32083, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: zf.i809.ml, skip-cert-verify: true, udp: true}
-  - {name: 美国02, server: qt16.godseven.xyz, port: 443, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: qt16.godseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国03, server: zf.i809.ml, port: 12087, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: zf.i809.ml, skip-cert-verify: true, udp: true}
-  - {name: 美国04, server: qt46.godseven.xyz, port: 2087, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: qt46.godseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 韩国01, server: zf.i809.ml, port: 45687, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: zf.i809.ml, skip-cert-verify: true, udp: true}
-  - {name: 韩国02, server: dk.i809.ml, port: 52087, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: dk.i809.ml, skip-cert-verify: true, udp: true}
-  - {name: 韩国03, server: zf.i809.ml, port: 49443, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: zf.i809.ml, skip-cert-verify: true, udp: true}
-  - {name: 韩国04, server: qv25.godseven.xyz, port: 443, type: vmess, uuid: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: shoutingtoutiao3.10010.com}, udp: true}
-  - {name: 台湾01, server: zf.i809.ml, port: 44444, type: trojan, password: 366bdcd8-455f-4ca1-8dc3-47291ca357f9, sni: zf.i809.ml, skip-cert-verify: true, udp: true}
+  - {name: "!用不了请联系(别用此线路)", server: 1, port: 80, type: vmess, uuid: 5d8044c3-593a-4e07-8709-8bb9efdd018e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 1}}}
+  - {name: 🇭🇰 香港1, server: dl-hk1.steamdownload.top, port: 443, type: trojan, password: ae720c18-9a6f-4730-a1e0-8cd800d70c67, sni: data-hk.efyunpan.com}
+  - {name: 🇭🇰 香港2, server: dl-hk2.steamdownload.top, port: 443, type: trojan, password: ae720c18-9a6f-4730-a1e0-8cd800d70c67, sni: data-hk.efyunpan.com}
+  - {name: 🇭🇰 香港3, server: dl-hk3.steamdownload.top, port: 443, type: trojan, password: ae720c18-9a6f-4730-a1e0-8cd800d70c67, sni: data-hk.efyunpan.com}
+  - {name: 🇭🇰 香港4, server: dl-hk4.steamdownload.top, port: 443, type: trojan, password: ae720c18-9a6f-4730-a1e0-8cd800d70c67, sni: data-hk.efyunpan.com}
+  - {name: 🇭🇰 香港5, server: dl-hk5.steamdownload.top, port: 443, type: trojan, password: ae720c18-9a6f-4730-a1e0-8cd800d70c67, sni: data-hk.efyunpan.com}
+  - {name: 🇯🇵 日本1, server: dl-jp1.steamdownload.top, port: 443, type: trojan, password: ae720c18-9a6f-4730-a1e0-8cd800d70c67, sni: data-jp.efyunpan.com}
+  - {name: 🇯🇵 日本2, server: dl-jp2.steamdownload.top, port: 443, type: trojan, password: ae720c18-9a6f-4730-a1e0-8cd800d70c67, sni: data-jp.efyunpan.com}
+  - {name: 🇯🇵 日本3, server: dl-jp3.steamdownload.top, port: 443, type: trojan, password: ae720c18-9a6f-4730-a1e0-8cd800d70c67, sni: data-jp.efyunpan.com}
+  - {name: 🇯🇵 日本4, server: dl-jp4.steamdownload.top, port: 443, type: trojan, password: ae720c18-9a6f-4730-a1e0-8cd800d70c67, sni: data-jp.efyunpan.com}
+  - {name: 🇰🇷 韩国1, server: dl-am1.steamdownload.top, port: 443, type: trojan, password: ae720c18-9a6f-4730-a1e0-8cd800d70c67, sni: data-ockrsl.efyunpan.com}
+  - {name: 🇰🇷 韩国2, server: dl-am2.steamdownload.top, port: 443, type: trojan, password: ae720c18-9a6f-4730-a1e0-8cd800d70c67, sni: data-ockrcc.efyunpan.com}
+  - {name: 🇸🇬 新加坡1, server: dl-sg1.steamdownload.top, port: 443, type: trojan, password: ae720c18-9a6f-4730-a1e0-8cd800d70c67, sni: data-sg.efyunpan.com}
+  - {name: 🇸🇬 新加坡2, server: dl-sg2.steamdownload.top, port: 443, type: trojan, password: ae720c18-9a6f-4730-a1e0-8cd800d70c67, sni: data-sg.efyunpan.com}
+  - {name: 🇸🇬 新加坡3, server: dl-sg3.steamdownload.top, port: 443, type: trojan, password: ae720c18-9a6f-4730-a1e0-8cd800d70c67, sni: data-sg.efyunpan.com}
+  - {name: 🇸🇬 新加坡4, server: dl-sg4.steamdownload.top, port: 443, type: trojan, password: ae720c18-9a6f-4730-a1e0-8cd800d70c67, sni: data-sg.efyunpan.com}
+  - {name: 🇺🇸 美国1, server: dl-us1.steamdownload.top, port: 443, type: trojan, password: ae720c18-9a6f-4730-a1e0-8cd800d70c67, sni: data-us.efyunpan.com}
+  - {name: 🇺🇸 美国2, server: dl-us2.steamdownload.top, port: 443, type: trojan, password: ae720c18-9a6f-4730-a1e0-8cd800d70c67, sni: data-us.efyunpan.com}
+  - {name: 🇺🇸 美国3, server: dl-us3.steamdownload.top, port: 443, type: trojan, password: ae720c18-9a6f-4730-a1e0-8cd800d70c67, sni: data-us.efyunpan.com}
+  - {name: 🇺🇸 美国4, server: dl-us4.steamdownload.top, port: 443, type: trojan, password: ae720c18-9a6f-4730-a1e0-8cd800d70c67, sni: data-us.efyunpan.com}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港01
-      - 香港02
-      - 香港03
-      - 香港04
-      - 香港05
-      - 香港06
-      - 香港07
-      - 香港08
-      - 新加坡01
-      - 新加坡02
-      - 新加坡03
-      - 新加坡04
-      - 新加坡05
-      - 日本01
-      - 日本02
-      - 日本03
-      - 日本04
-      - 日本05
-      - 日本06
-      - 日本07
-      - 日本08
-      - 日本09
-      - 日本10
-      - 美国01
-      - 美国02
-      - 美国03
-      - 美国04
-      - 韩国01
-      - 韩国02
-      - 韩国03
-      - 韩国04
-      - 台湾01
+      - "!用不了请联系(别用此线路)"
+      - 🇭🇰 香港1
+      - 🇭🇰 香港2
+      - 🇭🇰 香港3
+      - 🇭🇰 香港4
+      - 🇭🇰 香港5
+      - 🇯🇵 日本1
+      - 🇯🇵 日本2
+      - 🇯🇵 日本3
+      - 🇯🇵 日本4
+      - 🇰🇷 韩国1
+      - 🇰🇷 韩国2
+      - 🇸🇬 新加坡1
+      - 🇸🇬 新加坡2
+      - 🇸🇬 新加坡3
+      - 🇸🇬 新加坡4
+      - 🇺🇸 美国1
+      - 🇺🇸 美国2
+      - 🇺🇸 美国3
+      - 🇺🇸 美国4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港01
-      - 香港02
-      - 香港03
-      - 香港04
-      - 香港05
-      - 香港06
-      - 香港07
-      - 香港08
-      - 新加坡01
-      - 新加坡02
-      - 新加坡03
-      - 新加坡04
-      - 新加坡05
-      - 日本01
-      - 日本02
-      - 日本03
-      - 日本04
-      - 日本05
-      - 日本06
-      - 日本07
-      - 日本08
-      - 日本09
-      - 日本10
-      - 美国01
-      - 美国02
-      - 美国03
-      - 美国04
-      - 韩国01
-      - 韩国02
-      - 韩国03
-      - 韩国04
-      - 台湾01
-  - name: 🎥 NETFLIX
-    type: select
-    proxies:
-      - 🔰 节点选择
-      - ♻️ 自动选择
-      - 🎯 全球直连
-      - 香港01
-      - 香港02
-      - 香港03
-      - 香港04
-      - 香港05
-      - 香港06
-      - 香港07
-      - 香港08
-      - 新加坡01
-      - 新加坡02
-      - 新加坡03
-      - 新加坡04
-      - 新加坡05
-      - 日本01
-      - 日本02
-      - 日本03
-      - 日本04
-      - 日本05
-      - 日本06
-      - 日本07
-      - 日本08
-      - 日本09
-      - 日本10
-      - 美国01
-      - 美国02
-      - 美国03
-      - 美国04
-      - 韩国01
-      - 韩国02
-      - 韩国03
-      - 韩国04
-      - 台湾01
-  - name: ⛔️ 广告拦截
-    type: select
-    proxies:
-      - 🛑 全球拦截
-      - 🎯 全球直连
-      - 🔰 节点选择
-  - name: 🚫 运营劫持
-    type: select
-    proxies:
-      - 🛑 全球拦截
-      - 🎯 全球直连
-      - 🔰 节点选择
+      - "!用不了请联系(别用此线路)"
+      - 🇭🇰 香港1
+      - 🇭🇰 香港2
+      - 🇭🇰 香港3
+      - 🇭🇰 香港4
+      - 🇭🇰 香港5
+      - 🇯🇵 日本1
+      - 🇯🇵 日本2
+      - 🇯🇵 日本3
+      - 🇯🇵 日本4
+      - 🇰🇷 韩国1
+      - 🇰🇷 韩国2
+      - 🇸🇬 新加坡1
+      - 🇸🇬 新加坡2
+      - 🇸🇬 新加坡3
+      - 🇸🇬 新加坡4
+      - 🇺🇸 美国1
+      - 🇺🇸 美国2
+      - 🇺🇸 美国3
+      - 🇺🇸 美国4
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港01
-      - 香港02
-      - 香港03
-      - 香港04
-      - 香港05
-      - 香港06
-      - 香港07
-      - 香港08
-      - 新加坡01
-      - 新加坡02
-      - 新加坡03
-      - 新加坡04
-      - 新加坡05
-      - 日本01
-      - 日本02
-      - 日本03
-      - 日本04
-      - 日本05
-      - 日本06
-      - 日本07
-      - 日本08
-      - 日本09
-      - 日本10
-      - 美国01
-      - 美国02
-      - 美国03
-      - 美国04
-      - 韩国01
-      - 韩国02
-      - 韩国03
-      - 韩国04
-      - 台湾01
+      - "!用不了请联系(别用此线路)"
+      - 🇭🇰 香港1
+      - 🇭🇰 香港2
+      - 🇭🇰 香港3
+      - 🇭🇰 香港4
+      - 🇭🇰 香港5
+      - 🇯🇵 日本1
+      - 🇯🇵 日本2
+      - 🇯🇵 日本3
+      - 🇯🇵 日本4
+      - 🇰🇷 韩国1
+      - 🇰🇷 韩国2
+      - 🇸🇬 新加坡1
+      - 🇸🇬 新加坡2
+      - 🇸🇬 新加坡3
+      - 🇸🇬 新加坡4
+      - 🇺🇸 美国1
+      - 🇺🇸 美国2
+      - 🇺🇸 美国3
+      - 🇺🇸 美国4
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港01
-      - 香港02
-      - 香港03
-      - 香港04
-      - 香港05
-      - 香港06
-      - 香港07
-      - 香港08
-      - 台湾01
+      - 🇭🇰 香港1
+      - 🇭🇰 香港2
+      - 🇭🇰 香港3
+      - 🇭🇰 香港4
+      - 🇭🇰 香港5
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港01
-      - 香港02
-      - 香港03
-      - 香港04
-      - 香港05
-      - 香港06
-      - 香港07
-      - 香港08
-      - 新加坡01
-      - 新加坡02
-      - 新加坡03
-      - 新加坡04
-      - 新加坡05
-      - 日本01
-      - 日本02
-      - 日本03
-      - 日本04
-      - 日本05
-      - 日本06
-      - 日本07
-      - 日本08
-      - 日本09
-      - 日本10
-      - 美国01
-      - 美国02
-      - 美国03
-      - 美国04
-      - 韩国01
-      - 韩国02
-      - 韩国03
-      - 韩国04
-      - 台湾01
+      - "!用不了请联系(别用此线路)"
+      - 🇭🇰 香港1
+      - 🇭🇰 香港2
+      - 🇭🇰 香港3
+      - 🇭🇰 香港4
+      - 🇭🇰 香港5
+      - 🇯🇵 日本1
+      - 🇯🇵 日本2
+      - 🇯🇵 日本3
+      - 🇯🇵 日本4
+      - 🇰🇷 韩国1
+      - 🇰🇷 韩国2
+      - 🇸🇬 新加坡1
+      - 🇸🇬 新加坡2
+      - 🇸🇬 新加坡3
+      - 🇸🇬 新加坡4
+      - 🇺🇸 美国1
+      - 🇺🇸 美国2
+      - 🇺🇸 美国3
+      - 🇺🇸 美国4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港01
-      - 香港02
-      - 香港03
-      - 香港04
-      - 香港05
-      - 香港06
-      - 香港07
-      - 香港08
-      - 新加坡01
-      - 新加坡02
-      - 新加坡03
-      - 新加坡04
-      - 新加坡05
-      - 日本01
-      - 日本02
-      - 日本03
-      - 日本04
-      - 日本05
-      - 日本06
-      - 日本07
-      - 日本08
-      - 日本09
-      - 日本10
-      - 美国01
-      - 美国02
-      - 美国03
-      - 美国04
-      - 韩国01
-      - 韩国02
-      - 韩国03
-      - 韩国04
-      - 台湾01
+      - "!用不了请联系(别用此线路)"
+      - 🇭🇰 香港1
+      - 🇭🇰 香港2
+      - 🇭🇰 香港3
+      - 🇭🇰 香港4
+      - 🇭🇰 香港5
+      - 🇯🇵 日本1
+      - 🇯🇵 日本2
+      - 🇯🇵 日本3
+      - 🇯🇵 日本4
+      - 🇰🇷 韩国1
+      - 🇰🇷 韩国2
+      - 🇸🇬 新加坡1
+      - 🇸🇬 新加坡2
+      - 🇸🇬 新加坡3
+      - 🇸🇬 新加坡4
+      - 🇺🇸 美国1
+      - 🇺🇸 美国2
+      - 🇺🇸 美国3
+      - 🇺🇸 美国4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港01
-      - 香港02
-      - 香港03
-      - 香港04
-      - 香港05
-      - 香港06
-      - 香港07
-      - 香港08
-      - 新加坡01
-      - 新加坡02
-      - 新加坡03
-      - 新加坡04
-      - 新加坡05
-      - 日本01
-      - 日本02
-      - 日本03
-      - 日本04
-      - 日本05
-      - 日本06
-      - 日本07
-      - 日本08
-      - 日本09
-      - 日本10
-      - 美国01
-      - 美国02
-      - 美国03
-      - 美国04
-      - 韩国01
-      - 韩国02
-      - 韩国03
-      - 韩国04
-      - 台湾01
+      - "!用不了请联系(别用此线路)"
+      - 🇭🇰 香港1
+      - 🇭🇰 香港2
+      - 🇭🇰 香港3
+      - 🇭🇰 香港4
+      - 🇭🇰 香港5
+      - 🇯🇵 日本1
+      - 🇯🇵 日本2
+      - 🇯🇵 日本3
+      - 🇯🇵 日本4
+      - 🇰🇷 韩国1
+      - 🇰🇷 韩国2
+      - 🇸🇬 新加坡1
+      - 🇸🇬 新加坡2
+      - 🇸🇬 新加坡3
+      - 🇸🇬 新加坡4
+      - 🇺🇸 美国1
+      - 🇺🇸 美国2
+      - 🇺🇸 美国3
+      - 🇺🇸 美国4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -341,38 +203,26 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港01
-      - 香港02
-      - 香港03
-      - 香港04
-      - 香港05
-      - 香港06
-      - 香港07
-      - 香港08
-      - 新加坡01
-      - 新加坡02
-      - 新加坡03
-      - 新加坡04
-      - 新加坡05
-      - 日本01
-      - 日本02
-      - 日本03
-      - 日本04
-      - 日本05
-      - 日本06
-      - 日本07
-      - 日本08
-      - 日本09
-      - 日本10
-      - 美国01
-      - 美国02
-      - 美国03
-      - 美国04
-      - 韩国01
-      - 韩国02
-      - 韩国03
-      - 韩国04
-      - 台湾01
+      - "!用不了请联系(别用此线路)"
+      - 🇭🇰 香港1
+      - 🇭🇰 香港2
+      - 🇭🇰 香港3
+      - 🇭🇰 香港4
+      - 🇭🇰 香港5
+      - 🇯🇵 日本1
+      - 🇯🇵 日本2
+      - 🇯🇵 日本3
+      - 🇯🇵 日本4
+      - 🇰🇷 韩国1
+      - 🇰🇷 韩国2
+      - 🇸🇬 新加坡1
+      - 🇸🇬 新加坡2
+      - 🇸🇬 新加坡3
+      - 🇸🇬 新加坡4
+      - 🇺🇸 美国1
+      - 🇺🇸 美国2
+      - 🇺🇸 美国3
+      - 🇺🇸 美国4
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -9329,6 +9179,8 @@ rules:
  - DOMAIN-SUFFIX,hypeapp.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,hypersnap.net,🛑 全球拦截
  - DOMAIN-SUFFIX,iconworkshop.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,idmchina.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,imazingchina.com,🛑 全球拦截
  - DOMAIN-SUFFIX,imindmap.cc,🛑 全球拦截
  - DOMAIN-SUFFIX,jihehuaban.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,keyshot.cc,🛑 全球拦截
@@ -9363,41 +9215,12 @@ rules:
  - DOMAIN-SUFFIX,yuanchengxiezuo.com,🛑 全球拦截
  - DOMAIN-SUFFIX,zbrushcn.com,🛑 全球拦截
  - DOMAIN-SUFFIX,zhzzx.com,🛑 全球拦截
- - DOMAIN-SUFFIX,netflix.com,🎥 NETFLIX
- - DOMAIN-SUFFIX,netflix.net,🎥 NETFLIX
- - DOMAIN-SUFFIX,nflxext.com,🎥 NETFLIX
- - DOMAIN-SUFFIX,nflximg.com,🎥 NETFLIX
- - DOMAIN-SUFFIX,nflximg.net,🎥 NETFLIX
- - DOMAIN-SUFFIX,nflxso.net,🎥 NETFLIX
- - DOMAIN-SUFFIX,nflxvideo.net,🎥 NETFLIX
- - DOMAIN-SUFFIX,netflixdnstest0.com,🎥 NETFLIX
- - DOMAIN-SUFFIX,netflixdnstest1.com,🎥 NETFLIX
- - DOMAIN-SUFFIX,netflixdnstest2.com,🎥 NETFLIX
- - DOMAIN-SUFFIX,netflixdnstest3.com,🎥 NETFLIX
- - DOMAIN-SUFFIX,netflixdnstest4.com,🎥 NETFLIX
- - DOMAIN-SUFFIX,netflixdnstest5.com,🎥 NETFLIX
- - DOMAIN-SUFFIX,netflixdnstest6.com,🎥 NETFLIX
- - DOMAIN-SUFFIX,netflixdnstest7.com,🎥 NETFLIX
- - DOMAIN-SUFFIX,netflixdnstest8.com,🎥 NETFLIX
- - DOMAIN-SUFFIX,netflixdnstest9.com,🎥 NETFLIX
- - DOMAIN-KEYWORD,dualstack.apiproxy-,🎥 NETFLIX
- - DOMAIN-KEYWORD,dualstack.ichnaea-web-,🎥 NETFLIX
- - IP-CIDR,23.246.0.0/18,🎥 NETFLIX,no-resolve
- - IP-CIDR,37.77.184.0/21,🎥 NETFLIX,no-resolve
- - IP-CIDR,45.57.0.0/17,🎥 NETFLIX,no-resolve
- - IP-CIDR,64.120.128.0/17,🎥 NETFLIX,no-resolve
- - IP-CIDR,66.197.128.0/17,🎥 NETFLIX,no-resolve
- - IP-CIDR,108.175.32.0/20,🎥 NETFLIX,no-resolve
- - IP-CIDR,192.173.64.0/18,🎥 NETFLIX,no-resolve
- - IP-CIDR,198.38.96.0/19,🎥 NETFLIX,no-resolve
- - IP-CIDR,198.45.48.0/20,🎥 NETFLIX,no-resolve
- - IP-CIDR,34.210.42.111/32,🎥 NETFLIX,no-resolve
- - IP-CIDR,52.89.124.203/32,🎥 NETFLIX,no-resolve
- - IP-CIDR,54.148.37.5/32,🎥 NETFLIX,no-resolve
  - DOMAIN-SUFFIX,jtvnw.net,🌍 国外媒体
  - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
  - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
  - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
+ - DOMAIN,radio.itunes.apple.com,🌍 国外媒体
+ - DOMAIN,tv.applemusic.com,🌍 国外媒体
  - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
  - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
@@ -9442,6 +9265,7 @@ rules:
  - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
  - DOMAIN,linear.tv.apple.com,🌍 国外媒体
  - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
+ - DOMAIN,uts-api.itunes.apple.com,🌍 国外媒体
  - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
  - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
  - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
@@ -9528,6 +9352,7 @@ rules:
  - IP-CIDR,203.74.95.153/32,🌍 国外媒体,no-resolve
  - IP-CIDR,203.211.4.169/32,🌍 国外媒体,no-resolve
  - IP-CIDR,203.211.4.193/32,🌍 国外媒体,no-resolve
+ - IP-CIDR,210.71.227.200/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.71.227.202/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.201.32.8/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.201.32.11/32,🌍 国外媒体,no-resolve
@@ -9628,15 +9453,14 @@ rules:
  - DOMAIN-SUFFIX,acg.tv,🌏 国内媒体
  - DOMAIN-SUFFIX,acgvideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,b23.tv,🌏 国内媒体
- - DOMAIN-SUFFIX,biliapi.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biliapi.net,🌏 国内媒体
  - DOMAIN-SUFFIX,bilibili.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biligame.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biligame.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,bilibili.tv,🌏 国内媒体
+ - DOMAIN-SUFFIX,biliapi.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,biliapi.com,🌏 国内媒体
  - DOMAIN-SUFFIX,bilivideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,hdslb.com,🌏 国内媒体
- - DOMAIN-SUFFIX,im9.com,🌏 国内媒体
- - DOMAIN-SUFFIX,smtcdns.net,🌏 国内媒体
+ - DOMAIN,upos-hz-mirrorakam.akamaized.net,🌏 国内媒体
+ - DOMAIN,apiintl.biliapi.net,🌏 国内媒体
  - DOMAIN,intel-cache.m.iqiyi.com,🌏 国内媒体
  - DOMAIN,intel-cache.video.iqiyi.com,🌏 国内媒体
  - DOMAIN,intl-rcd.iqiyi.com,🌏 国内媒体
@@ -9654,6 +9478,7 @@ rules:
  - DOMAIN-SUFFIX,api.mob.app.letv.com,🌏 国内媒体
  - DOMAIN-SUFFIX,v.smtcdns.com,🌏 国内媒体
  - DOMAIN-SUFFIX,vv.video.qq.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,youku.com,🌏 国内媒体
  - IP-CIDR,106.11.0.0/16,🌏 国内媒体,no-resolve
  - DOMAIN-SUFFIX,t.me,📲 电报信息
  - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
@@ -9667,11 +9492,14 @@ rules:
  - IP-CIDR,91.108.16.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.20.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.56.0/22,📲 电报信息,no-resolve
- - IP-CIDR,95.161.64.0/20,📲 电报信息,no-resolve
+ - IP-CIDR,91.105.192.0/23,📲 电报信息,no-resolve
  - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
+ - IP-CIDR,185.76.151.0/24,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
+ - IP-CIDR6,2001:b28:f23c::/48,📲 电报信息,no-resolve
+ - IP-CIDR6,2a0a:f280::/32,📲 电报信息,no-resolve
  - DOMAIN-SUFFIX,amazon.co.jp,🔰 节点选择
  - DOMAIN,d3c33hcgiwev3.cloudfront.net,🔰 节点选择
  - DOMAIN,payments-jp.amazon.com,🔰 节点选择
@@ -9680,16 +9508,36 @@ rules:
  - DOMAIN,a248.e.akamai.net,🔰 节点选择
  - DOMAIN,a771.dscq.akamai.net,🔰 节点选择
  - DOMAIN,testflight.apple.com,🔰 节点选择
+ - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
+ - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
+ - DOMAIN,clubhouse.pubnubapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,aex.com,🔰 节点选择
  - DOMAIN-SUFFIX,bibox.com,🔰 节点选择
  - DOMAIN-SUFFIX,binance.cc,🔰 节点选择
  - DOMAIN-SUFFIX,binance.com,🔰 节点选择
+ - DOMAIN-SUFFIX,binance.us,🔰 节点选择
  - DOMAIN-SUFFIX,bitcointalk.org,🔰 节点选择
  - DOMAIN-SUFFIX,bitfinex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bithumb.com,🔰 节点选择
  - DOMAIN-SUFFIX,bitmex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bitstamp.net,🔰 节点选择
+ - DOMAIN-SUFFIX,bittrex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bybit.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinbase.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coincheck.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coingecko.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinmarketcap.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinone.co.kr,🔰 节点选择
+ - DOMAIN-SUFFIX,ftx.com,🔰 节点选择
  - DOMAIN-SUFFIX,gate.io,🔰 节点选择
+ - DOMAIN-SUFFIX,gemini.com,🔰 节点选择
  - DOMAIN-SUFFIX,huobi.com,🔰 节点选择
+ - DOMAIN-SUFFIX,korbit.co.kr,🔰 节点选择
+ - DOMAIN-SUFFIX,kraken.com,🔰 节点选择
+ - DOMAIN-SUFFIX,kucoin.com,🔰 节点选择
+ - DOMAIN-SUFFIX,liquid.com,🔰 节点选择
  - DOMAIN-SUFFIX,okex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,poloniex.com,🔰 节点选择
  - DOMAIN-SUFFIX,uniswap.org,🔰 节点选择
  - DOMAIN-SUFFIX,zb.com,🔰 节点选择
  - DOMAIN-SUFFIX,discord.com,🔰 节点选择
@@ -9722,6 +9570,7 @@ rules:
  - DOMAIN-SUFFIX,blogger.com,🔰 节点选择
  - DOMAIN-SUFFIX,getoutline.org,🔰 节点选择
  - DOMAIN-SUFFIX,gvt0.com,🔰 节点选择
+ - DOMAIN-SUFFIX,gvt1.com,🔰 节点选择
  - DOMAIN-SUFFIX,gvt3.com,🔰 节点选择
  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🔰 节点选择
  - DOMAIN-SUFFIX,ytimg.com,🔰 节点选择
@@ -9772,11 +9621,14 @@ rules:
  - IP-CIDR,91.108.16.0/22,🔰 节点选择,no-resolve
  - IP-CIDR,91.108.20.0/22,🔰 节点选择,no-resolve
  - IP-CIDR,91.108.56.0/22,🔰 节点选择,no-resolve
- - IP-CIDR,95.161.64.0/20,🔰 节点选择,no-resolve
+ - IP-CIDR,91.105.192.0/23,🔰 节点选择,no-resolve
  - IP-CIDR,149.154.160.0/20,🔰 节点选择,no-resolve
+ - IP-CIDR,185.76.151.0/24,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,🔰 节点选择,no-resolve
+ - IP-CIDR6,2001:b28:f23c::/48,🔰 节点选择,no-resolve
+ - IP-CIDR6,2a0a:f280::/32,🔰 节点选择,no-resolve
  - DOMAIN-SUFFIX,pscp.tv,🔰 节点选择
  - DOMAIN-SUFFIX,periscope.tv,🔰 节点选择
  - DOMAIN-SUFFIX,t.co,🔰 节点选择
@@ -9845,7 +9697,6 @@ rules:
  - DOMAIN-SUFFIX,ck101.com,🔰 节点选择
  - DOMAIN-SUFFIX,clarionproject.org,🔰 节点选择
  - DOMAIN-SUFFIX,cloudcone.com,🔰 节点选择
- - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,clyp.it,🔰 节点选择
  - DOMAIN-SUFFIX,cna.com.tw,🔰 节点选择
  - DOMAIN-SUFFIX,comparitech.com,🔰 节点选择
@@ -9939,7 +9790,6 @@ rules:
  - DOMAIN-SUFFIX,jiji.com,🔰 节点选择
  - DOMAIN-SUFFIX,jinx.com,🔰 节点选择
  - DOMAIN-SUFFIX,jkforum.net,🔰 节点选择
- - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
  - DOMAIN-SUFFIX,joinmastodon.org,🔰 节点选择
  - DOMAIN-SUFFIX,justmysocks.net,🔰 节点选择
  - DOMAIN-SUFFIX,justpaste.it,🔰 节点选择
@@ -9965,6 +9815,7 @@ rules:
  - DOMAIN-SUFFIX,marc.info,🔰 节点选择
  - DOMAIN-SUFFIX,matters.news,🔰 节点选择
  - DOMAIN-SUFFIX,maying.co,🔰 节点选择
+ - DOMAIN-SUFFIX,medibang.com,🔰 节点选择
  - DOMAIN-SUFFIX,medium.com,🔰 节点选择
  - DOMAIN-SUFFIX,mega.nz,🔰 节点选择
  - DOMAIN-SUFFIX,mergersandinquisitions.com,🔰 节点选择
@@ -10054,6 +9905,7 @@ rules:
  - DOMAIN-SUFFIX,streamable.com,🔰 节点选择
  - DOMAIN-SUFFIX,streema.com,🔰 节点选择
  - DOMAIN-SUFFIX,substack.com,🔰 节点选择
+ - DOMAIN-SUFFIX,substack.com,🔰 节点选择
  - DOMAIN-SUFFIX,t66y.com,🔰 节点选择
  - DOMAIN-SUFFIX,tapatalk.com,🔰 节点选择
  - DOMAIN-SUFFIX,teco-hk.org,🔰 节点选择
@@ -10069,6 +9921,7 @@ rules:
  - DOMAIN-SUFFIX,tiny.cc,🔰 节点选择
  - DOMAIN-SUFFIX,tinyurl.com,🔰 节点选择
  - DOMAIN-SUFFIX,torproject.org,🔰 节点选择
+ - DOMAIN-SUFFIX,tradingview.com,🔰 节点选择
  - DOMAIN-SUFFIX,tumblr.com,🔰 节点选择
  - DOMAIN-SUFFIX,turbobit.net,🔰 节点选择
  - DOMAIN-SUFFIX,tutanota.com,🔰 节点选择
@@ -10185,20 +10038,33 @@ rules:
  - DOMAIN-SUFFIX,twitter.jp,🔰 节点选择
  - DOMAIN-SUFFIX,appsto.re,🔰 节点选择
  - DOMAIN,books.itunes.apple.com,🔰 节点选择
- - DOMAIN,api-glb-sea.smoot.apple.com,🔰 节点选择
- - DOMAIN,beta.music.apple.com,🔰 节点选择
- - DOMAIN,tv.apple.com,🔰 节点选择
- - DOMAIN,apps.apple.com,🔰 节点选择
- - DOMAIN,itunes.apple.com,🔰 节点选择
  - DOMAIN-SUFFIX,smoot.apple.com,🔰 节点选择
+ - DOMAIN,beta.music.apple.com,🔰 节点选择
  - DOMAIN,lookup-api.apple.com,🔰 节点选择
+ - DOMAIN,apps.apple.com,🔰 节点选择
+ - DOMAIN,books.apple.com,🔰 节点选择
+ - DOMAIN,itunes.apple.com,🔰 节点选择
+ - DOMAIN,tv.apple.com,🔰 节点选择
+ - DOMAIN,amp-api.podcasts.apple.com,🔰 节点选择
+ - DOMAIN,bookkeeper.itunes.apple.com,🔰 节点选择
+ - DOMAIN,gateway.icloud.com,🔰 节点选择
+ - DOMAIN-SUFFIX,apple.news,🔰 节点选择
+ - DOMAIN,news-assets.apple.com,🔰 节点选择
+ - DOMAIN,news-client.apple.com,🔰 节点选择
+ - DOMAIN,news-client-search.apple.com,🔰 节点选择
+ - DOMAIN,news-edge.apple.com,🔰 节点选择
+ - DOMAIN,news-events.apple.com,🔰 节点选择
+ - DOMAIN,apple.comscoreresearch.com,🔰 节点选择
  - DOMAIN-SUFFIX,go.dev,🔰 节点选择
  - DOMAIN-SUFFIX,golang.org,🔰 节点选择
+ - DOMAIN-SUFFIX,aicoin.com,🔰 节点选择
+ - DOMAIN-SUFFIX,aimoon.com,🔰 节点选择
  - DOMAIN-SUFFIX,bing.com,🔰 节点选择
  - DOMAIN-SUFFIX,cccat.io,🔰 节点选择
  - DOMAIN-SUFFIX,dubox.com,🔰 节点选择
  - DOMAIN-SUFFIX,duboxcdn.com,🔰 节点选择
  - DOMAIN-SUFFIX,ifixit.com,🔰 节点选择
+ - DOMAIN-SUFFIX,linkedin.com,🔰 节点选择
  - DOMAIN-SUFFIX,mangakakalot.com,🔰 节点选择
  - DOMAIN-SUFFIX,shopeemobile.com,🔰 节点选择
  - DOMAIN-SUFFIX,sushi.com,🔰 节点选择
@@ -10206,12 +10072,10 @@ rules:
  - DOMAIN,developer.apple.com,🔰 节点选择
  - DOMAIN,www.icloud.com,🔰 节点选择
  - DOMAIN,ocsp.apple.com,🔰 节点选择
- - DOMAIN,xp.apple.com,🔰 节点选择
  - DOMAIN,cacerts.digicert.com,🔰 节点选择
  - DOMAIN,crl3.digicert.com,🔰 节点选择
  - DOMAIN,crl4.digicert.com,🔰 节点选择
  - DOMAIN,ocsp.digicert.com,🔰 节点选择
- - DOMAIN-SUFFIX,cloudcone.com.cn,🔰 节点选择
  - DOMAIN-SUFFIX,inkbunny.net,🔰 节点选择
  - DOMAIN-SUFFIX,metapix.net,🔰 节点选择
  - DOMAIN-SUFFIX,s3.amazonaws.com,🔰 节点选择
@@ -10367,19 +10231,11 @@ rules:
  - DOMAIN-SUFFIX,qqmail.com,🎯 全球直连
  - DOMAIN-SUFFIX,servicewechat.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent.com,🎯 全球直连
+ - DOMAIN-SUFFIX,tencent-cloud.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent-cloud.net,🎯 全球直连
  - DOMAIN-SUFFIX,tenpay.com,🎯 全球直连
  - DOMAIN-SUFFIX,wechat.com,🎯 全球直连
  - DOMAIN,file-igamecj.akamaized.net,🎯 全球直连
- - IP-CIDR,101.32.104.4/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.104.41/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.104.56/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.118.25/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.16/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.53/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.209/32,🎯 全球直连,no-resolve
- - IP-CIDR,129.226.3.47/32,🎯 全球直连,no-resolve
- - IP-CIDR,129.226.107.244/32,🎯 全球直连,no-resolve
  - IP-CIDR,182.254.116.0/24,🎯 全球直连,no-resolve
  - IP-CIDR,203.205.254.0/23,🎯 全球直连,no-resolve
  - DOMAIN-SUFFIX,ccgslb.com,🎯 全球直连
@@ -10459,6 +10315,7 @@ rules:
  - DOMAIN-SUFFIX,chinaso.com,🎯 全球直连
  - DOMAIN-SUFFIX,chuimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,chunyu.mobi,🎯 全球直连
+ - DOMAIN-SUFFIX,cibntv.net,🎯 全球直连
  - DOMAIN-SUFFIX,cmbchina.com,🎯 全球直连
  - DOMAIN-SUFFIX,cmbimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,coolapk.com,🎯 全球直连
@@ -10503,8 +10360,6 @@ rules:
  - DOMAIN-SUFFIX,keepcdn.com,🎯 全球直连
  - DOMAIN-SUFFIX,kkmh.com,🎯 全球直连
  - DOMAIN-SUFFIX,lanzous.com,🎯 全球直连
- - DOMAIN-SUFFIX,licdn.com,🎯 全球直连
- - DOMAIN-SUFFIX,linkedin.com,🎯 全球直连
  - DOMAIN-SUFFIX,luojilab.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyan.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyun.tv,🎯 全球直连
@@ -10527,6 +10382,7 @@ rules:
  - DOMAIN-SUFFIX,ruguoapp.com,🎯 全球直连
  - DOMAIN-SUFFIX,sankuai.com,🎯 全球直连
  - DOMAIN-SUFFIX,scomper.me,🎯 全球直连
+ - DOMAIN-SUFFIX,shouqianba.com,🎯 全球直连
  - DOMAIN-SUFFIX,sm.ms,🎯 全球直连
  - DOMAIN-SUFFIX,smzdm.com,🎯 全球直连
  - DOMAIN-SUFFIX,snapdrop.net,🎯 全球直连
